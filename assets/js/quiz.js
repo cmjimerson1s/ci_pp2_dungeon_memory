@@ -99,7 +99,7 @@ function generateNewQuestions() {
     if(possibleQuestions.length === 0 || questionAmount > maximumQuestions) {
         localStorage.setItem('currentScore', score)
 
-        return window.location.assign('/end.html');
+        return window.location.assign('contact.html');
     }
 
     questionAmount++;
