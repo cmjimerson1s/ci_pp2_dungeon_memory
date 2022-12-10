@@ -54,7 +54,7 @@ const tileArray = [
    
 ]    
 
-
+tileArray.sort(() => 0.5 - Math.random());
 
 const tiles = document.querySelector('.tiles');
 const earnedScore = document.querySelector('#total-points');
@@ -111,7 +111,6 @@ function isCorrect() {
 
 generateBoard();
 
-function test ();
 
 
 
