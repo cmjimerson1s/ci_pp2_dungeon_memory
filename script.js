@@ -69,6 +69,17 @@ function generateBoard() {
     }
 }
 
+function revealCard() {
+    if (tilesPicked.length < 2) {
+        let tileId = this.getAttribute('data-id');
+        tilesPicked.push(tileArray[tileId].name);
+        tilesPickedId.push(tileId);
+        this.setAttribute('src', tileArray[tileId].img);
+        if (tilesPicked.length === 2) {
+            setTimeout(isCorrect, 500)
+        }
+    }
+}
 
 generateBoard();
 
