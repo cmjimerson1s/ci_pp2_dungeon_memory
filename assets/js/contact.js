@@ -1,12 +1,21 @@
-emailjs.sendForm('service_fvwzmql', 'template_pibbt1a', this)
-        .then(() => {
-            submitBtn.value = "Send";
-            console.log('succes');
-            submitBtn.setAttribute('disabled',true);
-            document.querySelector('#thnx-message').style.display="flex";
-            thankYouForm.reset();
+const form = document.querySelector('#contact-us');
+let subButton = document.getElementById('submit');
 
-        }, (err) => {
-           console.log('error');
-           alert('failed');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    emailjs.init('Os0hLGRhoHFPHYDO5');
+    subButton.value = "Now Submitting";
+
+    emailjs.sendForm('service_fvwzmql', 'template_pibbt1a', this)
+        .then(() => {
+            subButton.value = "Sent!";
+            console.log('success');
+            subButton.setAttribute('disabled', true);
+
+        }, (failure) => {
+            console.log(failure);
+            alert('Failed to Send. Please try again.',)
         });
+
+});
+
