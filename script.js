@@ -92,6 +92,8 @@ function isCorrect() {
         alert('You have got a match!');
         cards[choiceOneId].setAttribute('src', 'assets/img/gold.png');
         cards[choiceTwoId].setAttribute('src', 'assets/img/gold.png');
+        cards[choiceOneId].style.pointerEvents = "none";
+        cards[choiceTwoId].style.pointerEvents = "none";
         tilesDefeated.push(tilesPicked);
     } else {
         cards[choiceOneId].setAttribute('src', 'assets/img/dragon.png');
