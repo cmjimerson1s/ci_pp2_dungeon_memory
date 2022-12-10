@@ -5,67 +5,70 @@ document.addEventListener('DOMContentLoaded', () => {
 const tileArray = [
     {
         name: 'axe',
-        img: 'img/axe.png'
+        img: 'assets/img/axe.png'
     },
     {
         name: 'axe',
-        img: 'img/axe.png'
+        img: 'assets/img/axe.png'
     },
     {
         name: 'halberd',
-        img: 'img/halberd.png'
+        img: 'assets/img/halberd.png'
     },
     {
         name: 'halberd',
-        img: 'img/halberd.png'
+        img: 'assets/img/halberd.png'
     },
     {
         name: 'hammer',
-        img: 'img/hammer.png'
+        img: 'assets/img/hammer.png'
     },
     {
         name: 'hammer',
-        img: 'img/hammer.png'
+        img: 'assets/img/hammer.png'
     },
     {
         name: 'mace',
-        img: 'img/mace.png'
+        img: 'assets/img/mace.png'
     },
     {
         name: 'mace',
-        img: 'img/mace.png'
+        img: 'assets/img/mace.png'
     },
     {
         name: 'spear',
-        img: 'img/spear.png'
+        img: 'assets/img/spear.png'
     },
     {
         name: 'spear',
-        img: 'img/spear.png'
+        img: 'assets/img/spear.png'
     },
     {
         name: 'sword',
-        img: 'img/sword.png'
+        img: 'assets/img/sword.png'
     },
     {
         name: 'sword',
-        img: 'img/sword.png'
-    },
+        img: 'assets/img/sword.png'
+    }
    
 ]    
 
+
+
 const tiles = document.querySelector('.tiles');
 
-function generateBoard () {
-    for (let i = 0; i < tileArray.length; i++) {
-        var card = document.createElement('imgs');
-        card.setAttribute('src', 'img/dragon.png');
-        card.setAttribute('data-id', i);
-        // card.addEventListener('clicked', revealCard);
-        tiles.appendChild(card);
 
+function generateBoard() {
+    for (let i = 0; i < tileArray.length; i++) {
+        let card = document.createElement('img');
+        card.setAttribute('src', 'assets/img/dragon.png');
+        card.setAttribute('data-id', i);
+        // card.addEventListener('click', revealCard);
+        tiles.appendChild(card);
     }
 }
+
 
 generateBoard();
 
