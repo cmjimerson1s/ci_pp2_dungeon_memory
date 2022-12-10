@@ -63,6 +63,7 @@ let tilesPickedId = [];
 let tilesDefeated = [];
 let tilesWrong = [];
 
+timer();
 
 function generateBoard() {
     for (let i = 0; i < tileArray.length; i++) {
@@ -108,10 +109,13 @@ function isCorrect() {
     earnedScore.textContent = (Math.max(0, (((tilesDefeated.length) * 100) - ((tilesWrong.length) * 20))));
     if (tilesDefeated.length === tileArray.length/2) {
         earnedScore.textContent = 'You have won!'
+        disableTime();
     }
 }
 
+
 generateBoard();
+
 
 
 
