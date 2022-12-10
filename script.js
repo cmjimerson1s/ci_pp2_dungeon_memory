@@ -57,6 +57,7 @@ const tileArray = [
 
 
 const tiles = document.querySelector('.tiles');
+const earnedScore = document.querySelector('#total-points');
 let tilesPicked = [];
 let tilesPickedId = [];
 let tilesDefeated = [];
