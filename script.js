@@ -57,6 +57,9 @@ const tileArray = [
 
 
 const tiles = document.querySelector('.tiles');
+let tilesPicked = [];
+let tilesPickedId = [];
+let tilesDefeated = [];
 
 
 function generateBoard() {
@@ -78,6 +81,22 @@ function revealCard() {
         if (tilesPicked.length === 2) {
             setTimeout(isCorrect, 500)
         }
+    }
+}
+
+function isCorrect() {
+    let cards = document.querySelectorAll('img');
+    const choiceOneId = tilesPickedId[0];
+    const choiceTwoId = tilesPickedId[1];
+    if (tilesPicked[0] === tilesPicked[1]) {
+        alert('You have got a match!');
+        cards[choiceOneId].setAttribute('src', 'assets/img/gold.png');
+        cards[choiceTwoId].setAttribute('src', 'assets/img/gold.png');
+        tilesDefeated.push(tilesPicked);
+    } else {
+        cards[choiceOneId].setAttribute('src', 'assets/img/dragon.png');
+        cards[choiceTwoId].setAttribute('src', 'assets/img/dragon.png');
+        alert('Sorry, try again')
     }
 }
 
