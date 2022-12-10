@@ -1,8 +1,9 @@
 const quizQuestion = document.querySelector('#question');
 const options = Array.from(document.querySelectorAll('.option-text'));
 const scoreValue = document.querySelector('#score');
+const questionNumber = document.querySelector('#question-number');
 
-let currentQuestion = {};
+let thisQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionAmount = 0;
@@ -87,11 +88,38 @@ const myQuestions = [
 const correctPoints = 10;
 const maximumQuestions = 4;
 
-startGame = () => {
+beginQuiz = () => {
     questionAmount = 0;
     score = 0;
     possibleQuestions = [...myQuestions]
-    getNewQuestions();
+    generateNewQuestions();
 }
+
+generateNewQuestions = () => {
+    if(possibleQuestions.length === 0 || questionAmount > maximumQuestions) {
+        localStorage.setItem('currentScore', score)
+    }
+    questionAmount++;
+    questionNumber.innerText = `Number ${questionAmount} of ${maximumQuestions}`;
+
+    const myQuestionIndex = Math.floor(Math.random() * possibleQuestions.length);
+    thisQuestion = possibleQuestions[myQuestionIndex];
+    quizQuestion.innerText = thisQuestion.myQuestions;
+
+    options.forEach(options => {
+        const num = options.dataset['number'];
+        options.innerText = thisQuestion['choice' + num];
+    })
+
+    thisQuestion.splice(myQuestionIndex, 1);
+
+    acceptingAnswers = true;
+}
+
+options.forEach(options => {
+    options.addEventListener('click')
+} 
+    )
+
 
 
