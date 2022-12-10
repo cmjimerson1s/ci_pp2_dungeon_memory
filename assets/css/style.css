@@ -1,6 +1,11 @@
 .tiles {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    width: 600px;
     height: 300px;
+    margin: auto;
+}
+
+img {
+    padding: 25px;
 }
