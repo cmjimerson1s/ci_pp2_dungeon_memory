@@ -1,78 +1,85 @@
-const quizQuestion = document.querySelector('')
+const quizQuestion = document.querySelector('#question');
+const options = Array.from(document.querySelectorAll('.option-text'));
+const scoreValue = document.querySelector('#score');
 
+let currentQuestion = {};
+let acceptingAnswers = true;
+let score = 0;
+let questionAmount = 0;
+let possibleQuestions = [];
 
 const myQuestions = [
     {
         question: 'Who is considered to be the father of modern fantasy?',
-        choice1: 'J.K. Rowling',
-        choice2: 'J.R.R. Tolkien',
-        choice3: 'Ernist Hemingway',
-        answer:2,
+        answer1: 'J.K. Rowling',
+        answer2: 'J.R.R. Tolkien',
+        answer3: 'Ernist Hemingway',
+        correct:2,
     
     },
     {
         question: 'In Harry Potter the character Dobby is what sort of creature?',
-        choice1:'House Elf',
-        choice2: 'Goblin',
-        choice3: 'Witch', 
-        answer:1,
+        answer1:'House Elf',
+        answer2: 'Goblin',
+        answer3: 'Witch', 
+        correct:1,
     
     },
     {
         question: 'In Game of Thrones what is the name of the highest quality steel in the series?',
-        choice1: 'Targaryen',
-        choice2: 'Adamantium',
-        choice3: 'Valyrian',
-        answer:3,
+        answer1: 'Targaryen',
+        answer2: 'Adamantium',
+        answer3: 'Valyrian',
+        correct:3,
         
     },
     {
         question: 'Who pulled the sword from the stone?',
-        choice1: 'King Arthur',
-        choice2: 'Merlin',
-        choice3: 'Queen Maeve', 
-        answer:1,
+        answer1: 'King Arthur',
+        answer2: 'Merlin',
+        answer3: 'Queen Maeve', 
+        correct:1,
     },
     {
         question: 'Gandolf had the title of "the Grey" and what else?',
-        choice1: 'the Blue', 
-        choice2: 'the Green', 
-        choice3: 'the White', 
-        answer:3,
+        answer1: 'the Blue', 
+        answer2: 'the Green', 
+        answer3: 'the White', 
+        correct:3,
     },
     {
         question: 'A minotaur is a mix between a human and what animal?',
-        choice1: 'Bull', 
-        choice2: 'Horse', 
-        choice3: 'Goat', 
-        answer:1,
+        answer1: 'Bull', 
+        answer2: 'Horse', 
+        answer3: 'Goat', 
+        correct:1,
     },
     {
         question: 'What weapon does Gimli the dwarf prefer?',
-        choice1: 'Sword',
-        choice2: 'Axe', 
-        choice3: 'Whip', 
-        answer:2,
+        answer1: 'Sword',
+        answer2: 'Axe', 
+        answer3: 'Whip', 
+        correct:2,
     },
     {
         question: 'Who killed Dumbledore?',
-        choice1: 'Harry Potter',
-        choice2: 'Hagrid', 
-        choice3: 'Snape',
-        answer:3,
+        answer1: 'Harry Potter',
+        answer2: 'Hagrid', 
+        answer3: 'Snape',
+        correct:3,
     },
     {
         question: 'The MadHater may invite you to what sort of party?',
-        choice1: 'Frat',
-        choice2: 'Tea',
-        choice3:'New Year Eve',
-        answer:2,
+        answer1: 'Frat',
+        answer2: 'Tea',
+        answer3:'New Year Eve',
+        correct:2,
     },
     {
         question: 'Where can you find Narnia?',
-        choice1: 'In the oven', 
-        choice2: 'In a wardrobe', 
-        choice3: 'On the moon', 
-        answer:2,
+        answer1: 'In the oven', 
+        answer2: 'In a wardrobe', 
+        answer3: 'On the moon', 
+        correct:2,
     }
     ];
