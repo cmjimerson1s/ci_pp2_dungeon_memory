@@ -86,18 +86,20 @@ const myQuestions = [
     ];
 
 const correctPoints = 10;
-const maximumQuestions = 4;
+const maximumQuestions = 10;
 
-beginQuiz = () => {
+function beginQuiz()  {
     questionAmount = 0;
     score = 0;
     possibleQuestions = [...myQuestions]
     generateNewQuestions();
 }
 
-generateNewQuestions = () => {
+function generateNewQuestions() {
     if(possibleQuestions.length === 0 || questionAmount > maximumQuestions) {
         localStorage.setItem('currentScore', score)
+
+        return window.location.assign('/end.html');
     }
 
     questionAmount++;
@@ -105,27 +107,27 @@ generateNewQuestions = () => {
 
     const myQuestionIndex = Math.floor(Math.random() * possibleQuestions.length);
     thisQuestion = possibleQuestions[myQuestionIndex];
-    quizQuestion.innerText = thisQuestion.myQuestions;
+    quizQuestion.innerText = thisQuestion.question;
 
-    options.forEach(options => {
-        const num = options.dataset['number'];
-        options.innerText = thisQuestion['choice' + num];
+    options.forEach(answer => {
+        const num1 = answer.dataset['number'];
+        answer.innerText = thisQuestion['answer' + num1];
     })
 
-    thisQuestion.splice(myQuestionIndex, 1);
+    possibleQuestions.splice(myQuestionIndex, 1);
 
     acceptingAnswers = true;
 }
 
-options.forEach(options => {
-    options.addEventListener('click', e => {
-        if(!acceptingAnswers)return;
+options.forEach(answer => {
+    answer.addEventListener('click', e => {
+        if(!acceptingAnswers) return;
+        
         acceptingAnswers = false;
-
         const chosenOption = e.target;
         const chosenAnswer = chosenOption.dataset['number'];
 
-        let statusResult = chosenAnswer == thisQuestion.answer ? 'right' : 'wrong';
+        let statusResult = chosenAnswer == thisQuestion.correct ? 'right' : 'wrong';
     
         if(statusResult === 'right') {
             increaseScore(correctPoints);
@@ -134,12 +136,18 @@ options.forEach(options => {
         chosenOption.parentElement.classList.add(statusResult)
 
         setTimeout(() => {
-            chosenAnswer.parentElement.classList.remove(statusResult)
+            chosenOption.parentElement.classList.remove(statusResult)
             generateNewQuestions()
 
-        }, 1000)
+        }, 750)
     })
 })
 
+increaseScore = num => {
+    score +=num
+    scoreValue.innerText = score
+}
+
+beginQuiz()
 
 
