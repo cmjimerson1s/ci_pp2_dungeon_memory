@@ -99,6 +99,7 @@ generateNewQuestions = () => {
     if(possibleQuestions.length === 0 || questionAmount > maximumQuestions) {
         localStorage.setItem('currentScore', score)
     }
+
     questionAmount++;
     questionNumber.innerText = `Number ${questionAmount} of ${maximumQuestions}`;
 
@@ -117,9 +118,28 @@ generateNewQuestions = () => {
 }
 
 options.forEach(options => {
-    options.addEventListener('click')
-} 
-    )
+    options.addEventListener('click', e => {
+        if(!acceptingAnswers)return;
+        acceptingAnswers = false;
+
+        const chosenOption = e.target;
+        const chosenAnswer = chosenOption.dataset['number'];
+
+        let statusResult = chosenAnswer == thisQuestion.answer ? 'right' : 'wrong';
+    
+        if(statusResult === 'right') {
+            increaseScore(correctPoints);
+        }
+
+        chosenOption.parentElement.classList.add(statusResult)
+
+        setTimeout(() => {
+            chosenAnswer.parentElement.classList.remove(statusResult)
+            generateNewQuestions()
+
+        }, 1000)
+    })
+})
 
 
 
