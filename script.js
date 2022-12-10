@@ -98,6 +98,12 @@ function isCorrect() {
         cards[choiceTwoId].setAttribute('src', 'assets/img/dragon.png');
         alert('Sorry, try again')
     }
+    tilesPicked = [];
+    tilesPickedId = [];
+    earnedScore.textContent = ((tilesDefeated.length) * 100);
+    if (tilesDefeated.length === tileArray.length/2) {
+        earnedScore.textContent = 'You have won!'
+    }
 }
 
 generateBoard();
