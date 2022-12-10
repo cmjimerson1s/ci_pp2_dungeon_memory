@@ -61,6 +61,7 @@ const earnedScore = document.querySelector('#total-points');
 let tilesPicked = [];
 let tilesPickedId = [];
 let tilesDefeated = [];
+let tilesWrong = [];
 
 
 function generateBoard() {
@@ -100,10 +101,11 @@ function isCorrect() {
         cards[choiceOneId].setAttribute('src', 'assets/img/dragon.png');
         cards[choiceTwoId].setAttribute('src', 'assets/img/dragon.png');
         alert('Sorry, try again')
+        tilesWrong.push(tilesPicked);
     }
     tilesPicked = [];
     tilesPickedId = [];
-    earnedScore.textContent = ((tilesDefeated.length) * 100);
+    earnedScore.textContent = (Math.max(0, (((tilesDefeated.length) * 100) - ((tilesWrong.length) * 20))));
     if (tilesDefeated.length === tileArray.length/2) {
         earnedScore.textContent = 'You have won!'
     }
