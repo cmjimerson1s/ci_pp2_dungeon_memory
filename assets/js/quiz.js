@@ -83,3 +83,15 @@ const myQuestions = [
         correct:2,
     }
     ];
+
+const correctPoints = 10;
+const maximumQuestions = 4;
+
+startGame = () => {
+    questionAmount = 0;
+    score = 0;
+    possibleQuestions = [...myQuestions]
+    getNewQuestions();
+}
+
+
