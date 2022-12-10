@@ -110,6 +110,8 @@ function isCorrect() {
 
 generateBoard();
 
+function test ();
+
 
 
 
