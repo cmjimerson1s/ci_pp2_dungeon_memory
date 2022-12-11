@@ -90,7 +90,8 @@ function generateBoard() {
 }
 
 function revealCard() {
-
+    this.style.pointerEvents = "none";
+    
     if (tilesPicked.length < 2) {
         let tileId = this.getAttribute('data-id');
         tilesPicked.push(tileArray[tileId].name);

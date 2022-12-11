@@ -131,6 +131,7 @@ options.forEach(answer => {
     
         if(statusResult === 'right') {
             increaseScore(correctPoints);
+            this.style.backgroundColor = "pink";
         }
 
         chosenOption.parentElement.classList.add(statusResult);
