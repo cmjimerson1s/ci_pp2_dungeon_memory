@@ -118,19 +118,20 @@ function isCorrect() {
         } else {
             cards[choiceOneId].setAttribute('src', 'assets/img/dragon.png');
             cards[choiceTwoId].setAttribute('src', 'assets/img/dragon.png');
-            alert('Sorry, try again')
+            alert('Sorry, try again');
             tilesWrong.push(tilesPicked);
         }
 
     tilesPicked = [];
     tilesPickedId = [];
-    earnedScore.textContent = (Math.max(0, (((tilesDefeated.length) * 100) - ((tilesWrong.length) * 20))));
+    earnedScore.textContent =(Math.max(0, (((tilesDefeated.length) * 100) - ((tilesWrong.length) * 20))));
 
         if (tilesDefeated.length === tileArray.length/2) {
             earnedScore.textContent = ('You have won! With a score of ' + earnedScore.textContent);
+    
         }
 }
 
 generateBoard();
 
-})
+});
