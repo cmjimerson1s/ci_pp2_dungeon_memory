@@ -54,8 +54,6 @@ const tileArray = [
    
 ]    
 
-tileArray.sort(() => 0.5 - Math.random());
-
 const tiles = document.querySelector('.tiles');
 const earnedScore = document.querySelector('#total-points');
 let tilesPicked = [];
@@ -63,6 +61,7 @@ let tilesPickedId = [];
 let tilesDefeated = [];
 let tilesWrong = [];
 
+tileArray.sort(() => 0.5 - Math.random());
 
 function generateBoard() {
     for (let i = 0; i < tileArray.length; i++) {
