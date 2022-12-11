@@ -13,10 +13,10 @@ form.addEventListener('submit', function(event) {
             subButton.setAttribute('disabled', true);
             setTimeout(() => {
                 location.reload('contact.html');
-            }, 1000)
+            }, 1000);
         }, (failure) => {
             console.log(failure);
-            alert('Failed to Send. Please try again.',)
+            alert('Failed to Send. Please try again.',);
         });
 
 });
