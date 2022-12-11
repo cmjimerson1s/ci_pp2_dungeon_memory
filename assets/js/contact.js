@@ -16,7 +16,7 @@ form.addEventListener('submit', function(event) {
             }, 1000);
         }, (failure) => {
             console.log(failure);
-            alert('Failed to Send. Please try again.',);
+            alert('Failed to Send. Please try again.');
         });
 
 });

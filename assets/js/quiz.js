@@ -132,7 +132,7 @@ options.forEach(answer => {
         if(statusResult === 'right') {
             increaseScore(correctPoints);
         
-        };
+        }
 
         chosenOption.parentElement.classList.add(statusResult);
 
