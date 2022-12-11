@@ -98,7 +98,7 @@ function beginQuiz()  {
 function generateNewQuestions() {
     if(possibleQuestions.length === 0 || questionAmount > maximumQuestions) {
         localStorage.setItem('currentScore', score)
-
+        alert(`Quiz Done! You scored ${score} point!`);
         return window.location.assign('contact.html');
     }
 
@@ -120,11 +120,11 @@ function generateNewQuestions() {
 }
 
 options.forEach(answer => {
-    answer.addEventListener('click', e => {
+    answer.addEventListener('click', function(event)  {
         if(!acceptingAnswers) return;
         
         acceptingAnswers = false;
-        const chosenOption = e.target;
+        const chosenOption = event.target;
         const chosenAnswer = chosenOption.dataset['number'];
 
         let statusResult = chosenAnswer == thisQuestion.correct ? 'right' : 'wrong';
