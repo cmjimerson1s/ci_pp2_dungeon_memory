@@ -2,13 +2,8 @@ const quizQuestion = document.querySelector('#question');
 const options = Array.from(document.querySelectorAll('.option-text'));
 const scoreValue = document.querySelector('#score');
 const questionNumber = document.querySelector('#question-number');
-
-let thisQuestion = {};
-let acceptingAnswers = true;
-let score = 0;
-let questionAmount = 0;
-let possibleQuestions = [];
-
+const correctPoints = 10;
+const maximumQuestions = 10;
 const myQuestions = [
     {
         question: 'Who is considered to be the father of modern fantasy?',
@@ -85,8 +80,11 @@ const myQuestions = [
     }
     ];
 
-const correctPoints = 10;
-const maximumQuestions = 10;
+let thisQuestion = {};
+let acceptingAnswers = true;
+let score = 0;
+let questionAmount = 0;
+let possibleQuestions = [];
 
 function beginQuiz()  {
     questionAmount = 0;

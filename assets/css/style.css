@@ -1,3 +1,4 @@
+/* This section styles the global characteristis of the logo, nav, footer, etc */
 
 * {
     margin: 0;
@@ -45,6 +46,26 @@ h1 {
     text-decoration: underline;
 }
 
+footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;  
+
+}
+
+footer  a {
+    padding: 30px;
+    text-decoration: none;
+}
+
+/* This secion is the styling for the memory game */
+
 #score-box h2 {
     font-size: 2rem;
     letter-spacing: 3px;
@@ -69,30 +90,10 @@ h1 {
 
 }
 
-
 img {
     width: 50px;
     height: 50px;
 }
-
-footer {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-color: black;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;  
-
-}
-
-footer  a {
-    padding: 30px;
-    text-decoration: none;
-}
-
 
 /* Styling for Quiz page */
 
@@ -147,6 +148,8 @@ footer  a {
     transform: scale(1.25);
 }
 
+/* This is what gives the status colors when selecting the correct and incorrect choices */
+
 .right {
 
     background: green;
@@ -157,7 +160,7 @@ footer  a {
     background: red;
 }
 
-/*  Contact Us Page */
+/*  Styling for the Contact Us page and form */
 
 #form-container {
     display: flex;
@@ -221,7 +224,11 @@ footer  a {
     font-size: 3rem;
 }
 
+/* Media inquire to make site better for smaller screens */
+
 @media screen and (min-width: 450px) {
+
+    /* Style for Memory Game */
 
     h1 {
         font-size: 5rem;
@@ -243,6 +250,8 @@ footer  a {
         grid-template-columns: repeat(var(--num-cols), 1fr) ;
         grid-auto-rows: var(--row-height);
     }
+
+    /* Style for Quiz Game */
 
     #question-box {
         background-color: white;
@@ -280,8 +289,13 @@ footer  a {
     }
 }
 
+/* Media inquire to make site better for medium/small screens */
+
+
 @media screen and (min-width: 900px) {
     
+    /* Style for Memory Game */
+
     img {
         width: 100px;
         height: 100px;
@@ -296,6 +310,9 @@ footer  a {
         grid-template-columns: repeat(var(--num-cols), 1fr) ;
         grid-auto-rows: var(--row-height);
     }
+
+    /* Style for Quiz */
+
 
     #question-box {
         background-color: white;
@@ -334,14 +351,14 @@ footer  a {
     }
 
     .right {
+        background: green;
+    }
 
-    background: green;
-}
+    .wrong {
+        background: red;
+    }
 
-.wrong {
-
-    background: red;
-}
+    /* Style for Contact page */
 
     #form-container {
         margin-top: 5%;
@@ -369,14 +386,25 @@ footer  a {
 
 }
 
+/* Media inquire to make site better for larger screens */
+
+
 @media screen and (min-width: 1200px) {
+    
+    /* Style for Memory Game */
+
     .tiles{
-    padding-left: 150px;
-    padding-right: 150px;
+        padding-left: 150px;
+        padding-right: 150px;
     }    
 }
 
+/* Media inquire to make site better for wider and longer screens */
+
 @media (max-width: 1280px) and (min-height: 802px) {
+    
+    /* Style for Memory Game */
+
     .tiles {
         --num-cols: 4;
         --row-height: 80px;
@@ -388,7 +416,6 @@ footer  a {
         grid-auto-rows: var(--row-height);
     }
 
-
     img {
         height: 70px;
         width: 70px;
@@ -396,7 +423,11 @@ footer  a {
     
 }
 
+/* Media inquire to make site better for longer screens */
+
 @media screen and (max-height: 550px) {
+
+    /* Style for Memory Game */
 
     #score-box h2 {
         font-size: 1.2rem;
@@ -422,6 +453,8 @@ footer  a {
         height: 45px;
         width: 45px;
     }
+
+    /* Style for Quiz */
 
     #question-box {
         background-color: white;
@@ -460,7 +493,13 @@ footer  a {
     }
 }
 
+/* Media inquire to make site better for quite small screens */
+
+
 @media  screen and (max-height: 480px) {
+    
+    /* Style for Memory Game */
+
     #score-box {
         height: 38px;
     }
