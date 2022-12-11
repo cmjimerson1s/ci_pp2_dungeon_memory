@@ -6,12 +6,29 @@
 
 body {
     background: url(../img/dungeon_bg.jpg) no-repeat center center fixed;
+    font-family: 'VT323', monospace;
+
 }
 
-#nav-header {
+header {
     background-color: black;
-    height: 100px;
+    color: white;
+    height: 125px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px purple;
+    justify-content: center;
 }
 
 #game-container {
@@ -48,6 +65,12 @@ img {
 
 
 @media screen and (min-width: 450px) {
+
+    h1 {
+        font-size: 5rem;
+        text-shadow: 2px 2px purple;
+        justify-content: center;
+    }
     
     img {
         width: 75px;
