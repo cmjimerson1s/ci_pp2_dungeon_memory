@@ -23,12 +23,18 @@ header {
 
 a {
     padding: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 h1 {
     font-size: 3rem;
     text-shadow: 2px 2px purple;
     justify-content: center;
+}
+
+.this-page {
+    text-decoration: underline;
 }
 
 #game-container {
