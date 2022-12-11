@@ -376,14 +376,14 @@ footer  a {
     }    
 }
 
-/* @media (max-width: 1200px) and (min-height: 700px) {
+@media (max-width: 1200px) and (min-height: 700px) {
 
     img {
         height: 70px;
         width: 70px;
     }
     
-} */
+}
 
 @media screen and (min-height: 300px) {
 
