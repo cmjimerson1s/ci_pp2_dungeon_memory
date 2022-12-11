@@ -384,3 +384,31 @@ footer  a {
     }
     
 } */
+
+@media screen and (min-height: 300px) {
+
+    #score-box h2 {
+        font-size: 1.2rem;
+    }
+    
+    #game-container {
+
+        padding-top: 10px ;
+    }
+
+    .tiles {
+        --num-cols: 4;
+        --row-height: 50px;
+        place-items: center;
+        box-sizing: border-box;
+    
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr) ;
+        grid-auto-rows: var(--row-height);
+    }
+
+    img {
+        height: 45px;
+        width: 45px;
+    }
+}
