@@ -84,7 +84,7 @@ function generateBoard() {
         let card = document.createElement('img');
         card.setAttribute('src', 'assets/img/dragon.png');
         card.setAttribute('data-id', i);
-        card.setAttribute('alt', 'image of dragon token')
+        card.setAttribute('alt', 'image of dragon token');
         card.addEventListener('click', revealCard);
         tiles.appendChild(card);
     }
