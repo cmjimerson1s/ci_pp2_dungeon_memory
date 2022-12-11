@@ -186,6 +186,19 @@ footer  a {
     
 }
 
+/* 404 page styling */
+
+#message-box {
+    background-color: white;
+    margin-left: 12.5%;
+    margin-top: 10%;
+    width: 75%;
+}
+
+#message-box p {
+    color: black;
+    font-size: 3rem;
+}
 
 
 

@@ -143,9 +143,9 @@ options.forEach(answer => {
     })
 })
 
-increaseScore = num => {
-    score +=num
-    scoreValue.innerText = score
+function increaseScore(num) {
+    score +=num;
+    scoreValue.innerText = score;
 }
 
 beginQuiz()

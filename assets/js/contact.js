@@ -8,10 +8,12 @@ form.addEventListener('submit', function(event) {
 
     emailjs.sendForm('service_fvwzmql', 'template_pibbt1a', this)
         .then(() => {
-            subButton.value = "Sent!";
+            subButton.value = "Thank you! Sent Successfully!";
             console.log('success');
             subButton.setAttribute('disabled', true);
-
+            setTimeout(() => {
+                location.reload('contact.html');
+            }, 1000)
         }, (failure) => {
             console.log(failure);
             alert('Failed to Send. Please try again.',)
