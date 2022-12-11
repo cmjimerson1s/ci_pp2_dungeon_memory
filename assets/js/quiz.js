@@ -70,7 +70,7 @@ const myQuestions = [
         correct:3,
     },
     {
-        question: 'The MadHater may invite you to what sort of party?',
+        question: 'The Mad Hater may invite you to what sort of party?',
         answer1: 'Frat',
         answer2: 'Tea',
         answer3:'New Year Eve',
@@ -91,14 +91,14 @@ const maximumQuestions = 10;
 function beginQuiz()  {
     questionAmount = 0;
     score = 0;
-    possibleQuestions = [...myQuestions]
+    possibleQuestions = [...myQuestions];
     generateNewQuestions();
 }
 
 function generateNewQuestions() {
     if(possibleQuestions.length === 0 || questionAmount > maximumQuestions) {
-        localStorage.setItem('currentScore', score)
-        alert(`Quiz Done! You scored ${score} point!`);
+        localStorage.setItem('currentScore', score);
+        alert(`Quiz Complete! You scored ${score} points!`);
         return window.location.assign('contact.html');
     }
 
@@ -112,7 +112,7 @@ function generateNewQuestions() {
     options.forEach(answer => {
         const num1 = answer.dataset['number'];
         answer.innerText = thisQuestion['answer' + num1];
-    })
+    });
 
     possibleQuestions.splice(myQuestionIndex, 1);
 
@@ -133,21 +133,21 @@ options.forEach(answer => {
             increaseScore(correctPoints);
         }
 
-        chosenOption.parentElement.classList.add(statusResult)
+        chosenOption.parentElement.classList.add(statusResult);
 
         setTimeout(() => {
-            chosenOption.parentElement.classList.remove(statusResult)
-            generateNewQuestions()
+            chosenOption.parentElement.classList.remove(statusResult);
+            generateNewQuestions();
 
-        }, 750)
-    })
-})
+        }, 750);
+    });
+});
 
 function increaseScore(num) {
     score +=num;
     scoreValue.innerText = score;
 }
 
-beginQuiz()
+beginQuiz();
 
 
