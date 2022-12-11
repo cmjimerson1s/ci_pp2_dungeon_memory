@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
 
 
 //This array is what establishes the card tiles that are used in the game//
@@ -67,7 +67,7 @@ const tileArray = [
         name: 'katar',
         img: 'assets/img/katar.png'
     }
-]    
+];    
 
 const tiles = document.querySelector('.tiles');
 const earnedScore = document.querySelector('#total-points');
