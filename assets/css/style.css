@@ -376,7 +376,18 @@ footer  a {
     }    
 }
 
-@media (max-width: 1200px) and (min-height: 700px) {
+@media (max-width: 1280px) and (min-height: 802px) {
+    .tiles {
+        --num-cols: 4;
+        --row-height: 80px;
+        place-items: center;
+        box-sizing: border-box;
+    
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr) ;
+        grid-auto-rows: var(--row-height);
+    }
+
 
     img {
         height: 70px;
@@ -446,5 +457,11 @@ footer  a {
         justify-content: space-around;
         margin-top: 3%;
         width: 80%;
+    }
+}
+
+@media  screen and (max-height: 480px) {
+    #score-box {
+        height: 38px;
     }
 }
