@@ -97,7 +97,7 @@ function revealCard() {
         tilesPickedId.push(tileId);
         this.setAttribute('src', tileArray[tileId].img);
             if (tilesPicked.length === 2) {
-                setTimeout(isCorrect, 500)
+                setTimeout(isCorrect, 500);
             }
     }
 }
