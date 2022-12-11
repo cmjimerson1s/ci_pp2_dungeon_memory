@@ -335,13 +335,13 @@ footer  a {
 
     .right {
 
-        background: green;
-    }
-    
-    .wrong {
-    
-        background: red;
-    }
+    background: green;
+}
+
+.wrong {
+
+    background: red;
+}
 
     #form-container {
         margin-top: 5%;
@@ -375,3 +375,12 @@ footer  a {
     padding-right: 150px;
     }    
 }
+
+/* @media (max-width: 1200px) and (min-height: 700px) {
+
+    img {
+        height: 70px;
+        width: 70px;
+    }
+    
+} */
