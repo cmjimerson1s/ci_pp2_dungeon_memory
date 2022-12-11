@@ -29,6 +29,7 @@ header {
 
 a {
     font-size: 1.5rem;
+    letter-spacing: 2px;
     padding: 10px;
     text-decoration: none;
     color: white;
@@ -42,6 +43,14 @@ h1 {
 
 .this-page {
     text-decoration: underline;
+}
+
+#score-box h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
 }
 
 #game-container {
