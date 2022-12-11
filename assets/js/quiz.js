@@ -14,7 +14,7 @@ const myQuestions = [
         question: 'Who is considered to be the father of modern fantasy?',
         answer1: 'J.K. Rowling',
         answer2: 'J.R.R. Tolkien',
-        answer3: 'Ernist Hemingway',
+        answer3: 'Ernest Hemingway',
         correct:2,
     
     },

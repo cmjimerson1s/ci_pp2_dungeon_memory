@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
+<div class="content-body">
     <header>
         <div id="logo-nav">
             <h1 id="game-name">Dungeon Memory</h1>
             <br>
-            <a href="index.html">GAME</a>
-            <a href="quiz.html" class="this-page">QUIZ</a>
+            <a href="index.html" class="this-page">GAME</a>
+            <a href="quiz.html">QUIZ</a>
             <a href="contact.html">CONTACT US</a>
         </div>
     </header>
-    <div>
-        <p id="question-number"></p>
-    </div>
-    <div>
-        <p id="score">0</p>
-    </div>
+    <div id="quiz-box">
+        <div id="question-status">
+            <p id="question-number"></p>
+            <p id="scoreing">Score: <span id="score">0</span></p>
+        </div>   
     <div id="question-box">
-    <h1 id="question">What is the answer?</h1>
+    <h2 id="question">What is the answer?</h2>
     </div>
     <div class="option-box">
         <p class="option-text" data-number = "1">Choice 1</p>
     </div>
-    <div>
+    <div class="option-box">
         <p class="option-text" data-number = "2">Choice 2</p>
     </div>
-    <div>
+    <div class="option-box">
         <p class="option-text" data-number = "3">Choice 3</p>
+    </div>
+    
     </div>
     <footer>
         <a href="https://www.facebook.com/" target="_blank" aria-label="Check out our awesome Facebook page!(Redirects you to our Facebook page, opening a new tab"><i class="fa-brands fa-square-facebook"></i></a>
@@ -44,6 +47,6 @@
 
     <script src="assets/js/quiz.js"></script>
     <script src="https://kit.fontawesome.com/d7193cb9ae.js" crossorigin="anonymous"></script>
-
+</div>
 </body>
 </html>
