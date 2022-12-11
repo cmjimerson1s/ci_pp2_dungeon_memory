@@ -91,7 +91,7 @@ function generateBoard() {
 
 function revealCard() {
     this.style.pointerEvents = "none";
-    
+
     if (tilesPicked.length < 2) {
         let tileId = this.getAttribute('data-id');
         tilesPicked.push(tileArray[tileId].name);
@@ -119,6 +119,8 @@ function isCorrect() {
         } else {
             cards[choiceOneId].setAttribute('src', 'assets/img/dragon.png');
             cards[choiceTwoId].setAttribute('src', 'assets/img/dragon.png');
+            cards[choiceOneId].style.pointerEvents = "auto";
+            cards[choiceTwoId].style.pointerEvents = "auto";
             alert('Sorry, try again');
             tilesWrong.push(tilesPicked);
         }

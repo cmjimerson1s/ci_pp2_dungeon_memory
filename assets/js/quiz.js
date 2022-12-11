@@ -70,7 +70,7 @@ const myQuestions = [
         correct:3,
     },
     {
-        question: 'The Mad Hater may invite you to what sort of party?',
+        question: 'The Mad Hatter may invite you to what sort of party?',
         answer1: 'Frat',
         answer2: 'Tea',
         answer3:'New Year Eve',
@@ -131,8 +131,8 @@ options.forEach(answer => {
     
         if(statusResult === 'right') {
             increaseScore(correctPoints);
-            this.style.backgroundColor = "pink";
-        }
+        
+        };
 
         chosenOption.parentElement.classList.add(statusResult);
 
