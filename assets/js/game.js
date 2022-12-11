@@ -1,3 +1,5 @@
+//Add event listener to run the game when the page loads //
+
 document.addEventListener('DOMContentLoaded', function () {
 
 
@@ -71,13 +73,17 @@ const tileArray = [
 
 const tiles = document.querySelector('.tiles');
 const earnedScore = document.querySelector('#total-points');
+
+// Arrays that hold the collection of tiles when either chosen, matched, or incorrectly chosen//
 let tilesPicked = [];
 let tilesPickedId = [];
 let tilesDefeated = [];
 let tilesWrong = [];
 
+//  Randmonises the tiles positions//
 tileArray.sort(() => 0.5 - Math.random());
 
+/**  This loops through the tile array and sets the dragon icon over the weapon images, and applies other attributes to the tiles like the data-id of its array position*/
 function generateBoard() {
 
     for (let i = 0; i < tileArray.length; i++) {
@@ -90,6 +96,7 @@ function generateBoard() {
     }
 }
 
+/**  This function calls after bing clicked and removed the generated dragon image to reveal the weapon under it and collecting the tiles then calls the function to check if they are the same*/
 function revealCard() {
     this.style.pointerEvents = "none";
 
@@ -104,6 +111,8 @@ function revealCard() {
     }
 }
 
+/**  This function checks if the selected pair match, if so it alerts and makes matching pair unclickable and then increases the score by 100*/
+/**  If wrong the code allows the tiles to be clickable again, and then deducts points from the score, returning the cards back to the dragon icon*/
 function isCorrect() {
 
     let cards = document.querySelectorAll('img');
@@ -136,6 +145,7 @@ function isCorrect() {
         }
 }
 
+/**  This function calls the game to run*/
 generateBoard();
 
 });

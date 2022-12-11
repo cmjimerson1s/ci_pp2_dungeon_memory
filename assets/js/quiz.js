@@ -1,9 +1,11 @@
+//  Variables to control different elements of the quiz//
 const quizQuestion = document.querySelector('#question');
 const options = Array.from(document.querySelectorAll('.option-text'));
 const scoreValue = document.querySelector('#score');
 const questionNumber = document.querySelector('#question-number');
 const correctPoints = 10;
 const maximumQuestions = 10;
+// THis array holds the questions that are presented in the quiz //
 const myQuestions = [
     {
         question: 'Who is considered to be the father of modern fantasy?',
@@ -86,6 +88,7 @@ let score = 0;
 let questionAmount = 0;
 let possibleQuestions = [];
 
+/** This sets the values for different elements of the game, and then calls the functions to create the quiz.*/
 function beginQuiz()  {
     questionAmount = 0;
     score = 0;
@@ -93,30 +96,32 @@ function beginQuiz()  {
     generateNewQuestions();
 }
 
+/** This function first checks if the quiz is done, displaying the score and talking the user to the contact page */
 function generateNewQuestions() {
     if(possibleQuestions.length === 0 || questionAmount > maximumQuestions) {
         localStorage.setItem('currentScore', score);
         alert(`Quiz Complete! You scored ${score} points!`);
         return window.location.assign('contact.html');
     }
-
+    // incriments the question counter and keeps track the question of the total questions the user is on (1 of 10, 2 of 10, etc)//
     questionAmount++;
     questionNumber.innerText = `Number ${questionAmount} of ${maximumQuestions}`;
-
+    //Collects the index of a question from its array//
     const myQuestionIndex = Math.floor(Math.random() * possibleQuestions.length);
     thisQuestion = possibleQuestions[myQuestionIndex];
     quizQuestion.innerText = thisQuestion.question;
 
+    /**Collects possible answers from the question and displays to user  */
     options.forEach(answer => {
         const num1 = answer.dataset['number'];
         answer.innerText = thisQuestion['answer' + num1];
     });
-
+    //Removes the current question from the array// 
     possibleQuestions.splice(myQuestionIndex, 1);
 
     acceptingAnswers = true;
 }
-
+/** Collects the choice from the user upon clicking */
 options.forEach(answer => {
     answer.addEventListener('click', function(event)  {
         if(!acceptingAnswers) return;
@@ -126,14 +131,14 @@ options.forEach(answer => {
         const chosenAnswer = chosenOption.dataset['number'];
 
         let statusResult = chosenAnswer == thisQuestion.correct ? 'right' : 'wrong';
-    
+        //Evaluates if the choice from the user is correct//
         if(statusResult === 'right') {
             increaseScore(correctPoints);
         
         }
-
+        //Adds a class to the option chosen, creating a color reaction to the user//
         chosenOption.parentElement.classList.add(statusResult);
-
+        //removes the class previously added and then calls the previous function to loop through and add another question//
         setTimeout(() => {
             chosenOption.parentElement.classList.remove(statusResult);
             generateNewQuestions();
