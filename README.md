@@ -513,6 +513,7 @@ You can clone the repository by following these steps:
 
 ## Credits
 This video (https://www.youtube.com/watch?v=tjyDOHzKN0w) was the inspiration for my memory game
+<br>
 I used this video to understand the logic of the quiz game (https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2669s)
 
 
@@ -522,6 +523,7 @@ All of the weapon tokens were created from this file, on <a href="https://gamear
 [dragon.png] (assets/img/dragon.png): Designed by user: <a href ="https://www.reddit.com/user/TheCraftingCow/">The crafting cow</a> on <a href="https://www.reddit.com/r/Minecraft/comments/k3gwat/i_drew_this_ender_dragon_pixel_art_what_should_i/">on Reddit</a>
 <br>
 [gold.png] (assets/img/gold.png): Designed by user: <a href="https://www.shutterstock.com/g/non157">non248 pixel art</a>, on <a href="https://www.shutterstock.com/image-vector/vector-pixel-art-gold-coin-isolated-1209030841">Shutter Stock</a>
+<br>
 [dungeon_bg.jpg] (assets/img/dungeon_bg.jpg): Designed by user <a href="https://www.shutterstock.com/g/YUCALORA">YUCALORA</a>, on <a href="https://www.shutterstock.com/image-vector/dungeon-long-medieval-castle-corridor-torches-2126199458">Shutter Stock</a>
 
 ### Code
