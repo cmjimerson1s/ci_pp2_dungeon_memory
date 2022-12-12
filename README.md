@@ -40,47 +40,83 @@
 
 ## Project Goals 
 
-### User Goals
+The goal of this development project was to develop a website that has two intuitive and interactive games, meant to be able to be replayed multiple times. 
 
+### User Goals
+-Enjoy an intuitive and easy gameplay
+<br>
+-Test memory capabilities and see improvement by evaluating own scores
+<br>
+-Challenge knowledge of pop culture fantasy trivia
+<br>
 
 ### Site Owner Goals
 
+-Collect user data and feedback
+<br>
+-Develop a game that can be expanded
+<br>
+-Create a game that has intuitive interactivity
+<br>
+-Design the games to be responsive regardless of device
+<br>
+-Notify the user when they have failed, or succeeded, at the game tasks
 
 ## User Experience
 
 ### Target Audience
 
+-Users who are fans of the fantasy genre
+<br>
+-Users who are looking for challenging games
+<br>
+-Enthusiasts of puzzle or memory based games
+<br>
 
 ### User Requrements and Expectations
+
+-Know what page I’m currently visiting
+<br>
+-Simple ease of use in the game functionality 
+<br>
+-Visibility of how to contact company or find their social media
+<br>
+-Have a new experience in the memory game every visit to the site
 
 
 ### User Stories
 
-1. 
-2. 	
-3. 
-4. 
-5. 	
-6. 
-7.     
-8. 
-9. 	
-10. 
-11. 	
+1. As Sam, I want a game that is different every time I play so I can keep returning and enjoying the sites content.
+2. As Oskar, I want a game that is interactive and responds to me so I can easily have fun.	
+3. As Lucie, I want a game that lets me know how well I'm doing so I can compare my current success to my other attempts.
+4. As Daniel, I want to be notified when I've made a mistake so I can try to do better my next play though.
+5. As Natali, I want a way to communicate with the site owner so I can relay my opinion about the product.	
+6. As Alex, I want to know if my communication was successful so I don't have to try and blindly to reach the site owner again and again. 
+7. As Sarah, I want a game that can teach me something so I can feel accomplished when I'm finished playing.    
+8. As Tim, I want to know where I can reach you on social media so I can share the site with friends and family.
+9. As Moa, I want to easily be able to restart my game experience when done.	
+10. As the site owner, I want the user to be able to navigate easily so they can easily consume the sites content.
+11. As the site owner, I want the user t be able to easily return to the site if they visit a non-existing/non-working page on the site. 	
 
 ## Design
 
 ### Design Choices
-
+The design is meant to be simple and easy to visually understand, while also evoking the aesthetic of 8-bit video games, as they are a historical part of the pop-culture and fantasy genre. The background is meant as a visualization of ‘dungeon diving’ which is a play on the site’s name and the cliche act found in many fantasy series. 
 
 ### Colour
-
+The colours used are dark and cool, visually lending to the feel of being in the dark or subterranean spaces, hammering home the ‘dungeon’ theme of the background style, as well as accenting the dragon tokens used. 
 
 ### Fonts
-
+The font used is pixelated and again is meant to evoke the video games of the past, being both nostalgic and modern. The Google Fonts family chosen was VT323.
 
 ### Structure
-
+The structure of the website is simple, by design, and comprises three individual pages, one for each game and one for the contact form. The navigation is simple and intuitive, and with a simple underline highlights the page the user currently is one. 
+<br>
+-Game: The page where the memory game resides, also the main landing page of the site.
+<br>
+-Quiz: This page generates trivia quiz questions while displaying the number the user is on, and score.
+<bn>
+-Contact Us: This page is a simple form allowing the user to submit feedback on their experience. 
 
 
 ### Wireframes
@@ -96,15 +132,6 @@
 <details><summary>Rooms</summary>
 <img src="docs/wireframe/wf_room.png">
 </details>
-
-<details><summary>Contact</summary>
-<img src="docs/wireframe/wf_contact.png">
-</details>
-
-<details><summary>Book Now</summary>
-<img src="docs/wireframe/wf_book.png">
-</details>
-
 
 ## Technologies Used
 
@@ -129,76 +156,76 @@
 -Favicon
 <br>
 -Balsamiq
+<br>
+-EmailJS
+<br>
+-Favicon.io
+<br>
 
 ## Features
 
-### Logo and Nav
-<br>
+### Current Features
 
 ![Logo and Nav](docs/feature/feat_logo_nav.png)
 
-### What is… definitions
-Helps define what an escape room is
+### Logo and Nav
+Helps the customers move through the pages in an intuitive manner
 <br>
-Clarifies for customers who are unaware the additional benefits of the room
-<br>
-User stories covered: 1
+User stories covered: 10
 
-![What is.. definitoins](docs/feature/feat_what_is.png)
+![Memory Game Score](docs/feature/feat_what_is.png)
 	
-### Reasons for Bookings
-The list helps outline why an escape room game is perfect for a variety of individuals
+### Game Score Section
+This helps users keep track of their score, transforming the text to the score after the user starts the game  
 <br>
-The lists acts like an arrow for different browsers drawing attention to the call to action book now button
-<br>
-User stories covered: 8
+User stories covered: 3,7
 
-![Reasons for Bookings](docs/feature/feat_reasons.png)
+![Choice Highlight](docs/feature/feat_reasons.png)
 		
-### Book Now buttons
-These buttons are in a few locations across the site offering multiple opportunities for customers to book, hopefully to increase conversion
-<br>
-User stories covered: 4
-
-![Book Now buttons](docs/feature/feat_booknow.png)
-		
-### List of Staff
-The list provides a view of the individuals paramount to the operations of the business
-<br>
-User stories covered: 7
-
-![List of Staff](docs/feature/feat_staff.png)
-
-### Rooms List
-These cards highlight the theme, the story, and the difficulty of the room while also allowing customers to be taken straight to the booking form
-<br>
-User stories covered: 3, 5
-
-![Rooms List](docs/feature/feat_rooms.png)
-		
-### Difficulty Listings
-These are visible and listed above the images so ensure visibility and to help players choose the correct rooms for their event
-<br>
-User stories covered: 9
-
-![Difficulty Listings](docs/feature/feat_difficulty.png)
-	
-### Business Information
-The operation hours show the days the business is operating, and the times. The phone number and email are visible as well, with the business address above the pinned map.
-<br>
-User stories covered: 6
-
-![Business Information](docs/feature/feat_business_info.png)
-		
-### Google Maps
-Interactive map that allows a customer to see the location of the business and navigate the Google Maps snippet
+### Choice Highlight
+When hovering over the trivia answer the user wishes to choose the button becomes larger indicating the choice about to be input
 <br>
 User stories covered: 2
 
-![Google Maps](docs/feature/feat_google_map.png)
+![Wrong Answer](docs/feature/feat_booknow.png)
 		
-### Booking Request Form
-This allows the customer to make a booking, the contact pages shows the times and dates that are available to the customer
+### Wrong Answer
+When a choice is made the quiz highlights red when the answer given is wrong, but returns to uncoloured for the next question
+<br>
+User stories covered: 4, 2
+
+![Right Answer](docs/feature/feat_staff.png)
+
+### Right Answer
+When a choice is made the quiz highlights green when the answer given is correct, but returns to uncoloured for the next question. 
+<br>
+User stories covered: 3, 2
+
+![Quiz Status](docs/feature/feat_rooms.png)
+		
+### Current Status of Quiz
+This feature shows the user what number, out of ten, they are on for the trivia, and their current score.
+<br>
+User stories covered: 3
+
+![Game Notification](docs/feature/feat_difficulty.png)
+	
+### Game Notification
+This alert shows the user their final score and that the quiz is now done.
+<br>
+User stories covered: 6
+
+![Contact Form](docs/feature/feat_business_info.png)
+		
+### Contact Form
+A form that allows users to contact the site owners providing their name, email, and a comment about the games.
+<br>
+User stories covered: 5
+
+![Submit status](docs/feature/feat_google_map.png)
+		
+### Submit Button Status
+The button for the form updates to show the status of the submission 
 <br>
 User stories covered: 4
 
@@ -224,55 +251,67 @@ User stories covered: 11
 Utilizing W3C HTML Validation, (link) all pages pass with no errors
 
 <details><summary>Game</summary>
-    <img src="docs/validated/w3c_home.png">
+    <img src="docs/validate/indexHTMLValid.png">
 </details>
 <details><summary>Quiz</summary>
-    <img src="docs/validated/w3c_staff.png">
+    <img src="docs/validate/quizHTMLValid.png">
 </details>
 <details><summary>Contact Us</summary>
-    <img src="docs/validated/w3c_rooms.png">
+    <img src="docs/validate/contactHTMLValid.png">
 </details>
 <details><summary>404</summary>
-    <img src="docs/validated/w3c_contact.png">
+    <img src="docs/validate/404HTMLValid.png">
 </details>
     
 ### CSS Validation
 Utilizing W3C Jigsaw CSS Validation, the whole CSS file passed without errors or warnings
 
 <details><summary>Validation style.css</summary>
-<img src="docs/validated/css_valid.png">
+<img src="docs/validate/cssValid.png">
 </details>
 
 ### Accessibility Validation
 WAVE WebAIM was used to evaluate the accessibility of the website and every page passed with 0 errors and 0 contrast errors
 
 <details><summary>Game</summary>
-    <img src="docs/validated/wave_home.png">
+    <img src="docs/validate/gameAccessValid.png">
 </details>
 <details><summary>Quiz</summary>
-    <img src="docs/validated/wave_staff.png">
+    <img src="docs/validate/quizAccessValid.png">
 </details>
 <details><summary>Contact Us</summary>
-    <img src="docs/validated/wave_rooms.png">
+    <img src="docs/validate/contactAccessValid.png">
 </details>
 <details><summary>404</summary>
-    <img src="docs/validated/wave_contact.png">
+    <img src="docs/validate/404AccessValid.png">
+</details>
+
+### JavaScript Validation
+JSHint was used to evaluate the JavaScript controlling the pages of the website, all passed with no significant errors
+<details><summary>Game</summary>
+    <img src="docs/validate/gameJAVAValid.png">
+</details>
+<details><summary>Quiz</summary>
+    <img src="docs/validate/quizAccessValid.png">
+</details>
+<details><summary>Contact Us</summary>
+    <img src="docs/validate/contactJAVAValid.png">
 </details>
 
 ### Performance
 Utilizing Google Lighthouse through the Google Chrome Developer toolset all pages were tested for performance, with every page succeeding in a rating of over 90 for every category.
 
 <details><summary>Game</summary>
-    <img src="docs/validated/perf_home.png">
+    <img src="docs/validate/indexLighthouse.png">
 </details>
 <details><summary>Quiz</summary>
-    <img src="docs/validated/perf_staff.png">
+    <img src="docs/validate/quizLighthouse.png">
 </details>
 <details><summary>Contact Us</summary>
-    <img src="docs/validated/perf_rooms.png">
+    <img src="docs/validate/contactLighthouse.png">
 </details>
 <details><summary>404</summary>
-    <img src="docs/validated/perf_contact.png">
+    <img src="docs/validate/404Lighthouse.png">
 </details>
 
 
@@ -302,7 +341,7 @@ The website was evaluated and tested on the following browswers below:
 
 ### Testing user stories
 
-1. 	
+1. 	As Sam, I want a game that is different every time I play so I can keep returning and enjoying the site's content.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -313,7 +352,7 @@ The website was evaluated and tested on the following browswers below:
 </details>
 
 
-2. 	
+2. 	As Oskar, I want a game that is interactive and responds to me so I can easily have fun.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -324,7 +363,7 @@ The website was evaluated and tested on the following browswers below:
 </details>
 
 
-3. 
+3. As Lucie, I want a game that lets me know how well I'm doing so I can compare my current success to my other attempts.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -335,7 +374,7 @@ The website was evaluated and tested on the following browswers below:
 </details>
 
 
-4. 	
+4. 	As Daniel, I want to be notified when I've made a mistake so I can try to do better my next play though.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -345,7 +384,7 @@ The website was evaluated and tested on the following browswers below:
 <img src="docs/tests/test_04.png">
 </details>
 
-5. 	
+5. As Natali, I want a way to communicate with the site owner so I can relay my opinion about the product.	
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -356,7 +395,7 @@ The website was evaluated and tested on the following browswers below:
 </details>
 
 
-6. 
+6. As Alex, I want to know if my communication was successful so I don't have to try and blindly reach the site owner again and again.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -367,7 +406,7 @@ The website was evaluated and tested on the following browswers below:
 </details>
 
 
-7. 	
+7. As Sarah, I want a game that can teach me something so I can feel accomplished when I'm finished playing
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -378,7 +417,7 @@ The website was evaluated and tested on the following browswers below:
 </details>
 
 
-8. 	
+8. As Tim, I want to know where I can reach you on social media so I can share the site with friends and family.	
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -389,7 +428,7 @@ The website was evaluated and tested on the following browswers below:
 </details>
 
 
-9. 	
+9. As Moa, I want to easily be able to restart my game experience when done.	
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -400,7 +439,7 @@ The website was evaluated and tested on the following browswers below:
 </details>
 
 
-10. 
+10. As the site owner, I want the user to be able to navigate easily so they can easily consume the site's content.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -410,7 +449,11 @@ The website was evaluated and tested on the following browswers below:
 <img src="docs/tests/test_10.png">
 </details>
 
+11. As the site owner, I want the user to be able to easily return to the site if they visit a non-existing/non-working page on the site.
 
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|   | |  |  |
 
 ## Bugs
 

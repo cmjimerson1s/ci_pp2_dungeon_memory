@@ -1,6 +1,6 @@
 const form = document.querySelector('#contact-us');
 let subButton = document.getElementById('submit');
-
+//Below code snipets were taken from emailjs.com tuturoial website//
 /** Used the tutorial documents on the emailjs website to add code to collect the form information and send it to me via email */
 form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -17,7 +17,7 @@ form.addEventListener('submit', function(event) {
             }, 1000);
         }, (failure) => {
             console.log(failure);
-            alert('Failed to Send. Please try again.')
+            alert('Failed to Send. Please try again.');
             location.reload('contact.html');
         });
 
