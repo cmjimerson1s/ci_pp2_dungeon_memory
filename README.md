@@ -73,7 +73,7 @@ The goal of this development project was to develop a website that has two intui
 -Enthusiasts of puzzle or memory based games
 <br>
 
-### User Requrements and Expectations
+### User Requirements  and Expectations
 
 -Know what page I’m currently visiting
 <br>
@@ -350,8 +350,8 @@ The website was testing on the following devices
 
 The site was also tested using the many emulated devices through the use of Google Chrome Developer Tools
 
-### Browser compatability
-The website was evaluated and tested on the following browswers below:
+### Browser compatibility
+The website was evaluated and tested on the following browsers below:
 
 -Mozilla Firefox
 <br>
@@ -372,7 +372,7 @@ The website was evaluated and tested on the following browswers below:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Choice Hightlight | Hoover over choices | Magnifies the current choice | Works as expected  |
+| Choice Highlight  | Hover over choices | Magnifies the current choice | Works as expected  |
 
 
 <details><summary>Screenshots</summary>
@@ -418,7 +418,7 @@ The website was evaluated and tested on the following browswers below:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Submit Button Status | Click submit button | Button displayst the different status' of the forms delivery | Works as expected |
+| Submit Button Status | Click submit button | Button displays the different status' of the forms delivery | Works as expected |
 
 <details><summary>Screenshots</summary>
 <img src="docs/screenshots/submitbutton.png">
@@ -482,7 +482,7 @@ The website was evaluated and tested on the following browswers below:
 ## Bugs
 
 ### JHint EMailJS Error
-When I ran my JavaScript for the Contact Us page JHint threw up an error about the email.js being used, and after research I understand this is a common occurance with JHint, as EmailJS works perfectly fine, as is, with the code snipets used. 
+When I ran my JavaScript for the Contact Us page JHint threw up an error about the email.js being used, and after research I understand this is a common occurrence  with JHint, as EmailJS works perfectly fine, as is, with the code snippets  used. 
 <details><summary>Screenshots</summary>
 <img src="docs/screenshots/formJAVAValid error.png">
 </details>
@@ -496,7 +496,7 @@ The website was deployed using GitHub Pages by following these steps:
 1. In the GitHub repository navigate to the Settings tab
 2. On the left hand menu select Pages
 3. For the source select Branch: master
-4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at https://cmjimerson1s.github.io/ci_pp2_dungeon_memory/"
+4. After the webpage refreshes automatically you will see a ribbon on the top saying: "Your site is published at https://cmjimerson1s.github.io/ci_pp2_dungeon_memory/"
 
 You can for fork the repository by following these steps:
 1. Go to the GitHub repository
@@ -505,7 +505,7 @@ You can for fork the repository by following these steps:
 You can clone the repository by following these steps:
 1. Go to the GitHub repository 
 2. Locate the Code button above the list of files and click it 
-3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
 4. Open Git Bash
 5. Change the current working directory to the one where you want the cloned directory
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
@@ -527,8 +527,8 @@ All of the weapon tokens were created from this file, on <a href="https://gamear
 [dungeon_bg.jpg] (assets/img/dungeon_bg.jpg): Designed by user <a href="https://www.shutterstock.com/g/YUCALORA">YUCALORA</a>, on <a href="https://www.shutterstock.com/image-vector/dungeon-long-medieval-castle-corridor-torches-2126199458">Shutter Stock</a>
 
 ### Code
-Use of EmalJS snipets located in file contact.js(assets/js/contact.js) can be found at emailjs.com.
-Use of favicon.io snipets located in files index.html, quiz.html, contact.html, and 404.html can be found at favicon.io.
+Use of EmalJS snippets  located in file contact.js(assets/js/contact.js) can be found at emailjs.com.
+Use of favicon.io snippets  located in files index.html, quiz.html, contact.html, and 404.html can be found at favicon.io.
 
 ## Acknowledgements
 This has been an amazing experience, and I have many people to thank...
