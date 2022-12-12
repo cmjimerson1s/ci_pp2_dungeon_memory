@@ -121,16 +121,16 @@ The structure of the website is simple, by design, and comprises three individua
 
 ### Wireframes
 
-<details><summary>Home</summary>
-<img src="docs/wireframe/wf_home.png">
+<details><summary>Game</summary>
+<img src="docs/wireframe/gameWireFrame.png">
 </details>
 
-<details><summary>About</summary>
-<img src="docs/wireframe/wf_about.png">
+<details><summary>Quiz</summary>
+<img src="docs/wireframe/quizWireFrame.png">
 </details>
 
-<details><summary>Rooms</summary>
-<img src="docs/wireframe/wf_room.png">
+<details><summary>Contact Us</summary>
+<img src="docs/wireframe/contactWireFrame.png">
 </details>
 
 ## Technologies Used
@@ -227,23 +227,28 @@ User stories covered: 5
 ### Submit Button Status
 The button for the form updates to show the status of the submission 
 <br>
-User stories covered: 4
+User stories covered: 6
 
-![Booking Request Form](docs/feature/feat_booking.png)
+![Play Again?](docs/feature/feat_booking.png)
 
-### Footer
-The footer is shared across all pages and has links to the social media pages of the business, including facebook and google which are the main review platforms for many escape rooms.
+### Play Again Button
+This button at the end of the contact form takes players back to the memory game
 <br>
-User stories covered: 10
+User stories covered: 9
 
-![Footer](docs/feature/feat_footer.png)
+![404 Page](docs/feature/feat_footer.png)
 
 ### 404 Page
 The 404 page allows users to know if they have navigated to a non-working or non-existing page on the site, and allows them to return to the main site easily.
 <br>
 User stories covered: 11
 
-![404 Page](docs/feature/feat_404.png)
+![Footer](docs/feature/feat_404.png)
+
+### Footer
+The footer holds links to all our social media platforms allowing for quick access to our business platforms there
+<br>
+User stories covered: 8
 
 ## Validation
 
