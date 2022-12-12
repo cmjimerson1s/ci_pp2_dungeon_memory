@@ -87,7 +87,7 @@ The goal of this development project was to develop a website that has two intui
 ### User Stories
 
 1. As Sam, I want a game that is different every time I play so I can keep returning and enjoying the sites content.
-2. As Oskar, I want a game that is interactive and responds to me so I can easily have fun.	
+2. As Oskar, I want a game that is interactive and responds to me so I can easily understand what input I'm providing.	
 3. As Lucie, I want a game that lets me know how well I'm doing so I can compare my current success to my other attempts.
 4. As Daniel, I want to be notified when I've made a mistake so I can try to do better my next play though.
 5. As Natali, I want a way to communicate with the site owner so I can relay my opinion about the product.	
@@ -166,84 +166,99 @@ The structure of the website is simple, by design, and comprises three individua
 
 ### Current Features
 
-![Logo and Nav](docs/feature/feat_logo_nav.png)
+![Logo and Nav](docs/features/logonav.png)
 
 ### Logo and Nav
 Helps the customers move through the pages in an intuitive manner
 <br>
 User stories covered: 10
 
-![Memory Game Score](docs/feature/feat_what_is.png)
+![Memory Game](docs/features/game.png)
+
+### Memory Game
+A simple 4 x 4 memory game that automatically randomizes the tile for every game that's played
+<br>
+User stories covered: 1
+
+![Memory Game Score](docs/features/score.png)
 	
 ### Game Score Section
 This helps users keep track of their score, transforming the text to the score after the user starts the game  
 <br>
-User stories covered: 3,7
+User stories covered: 3
 
-![Choice Highlight](docs/feature/feat_reasons.png)
+![Quiz](docs/features/quizchoicehighlight.png)
+		
+### Choice Highlight
+A game that displays random fantasy trivia
+<br>
+User stories covered: 7
+
+![Choice Highlight](docs/features/quizchoicehighlight.png)
 		
 ### Choice Highlight
 When hovering over the trivia answer the user wishes to choose the button becomes larger indicating the choice about to be input
 <br>
 User stories covered: 2
 
-![Wrong Answer](docs/feature/feat_booknow.png)
+![Wrong Answer](docs/features/quizchoicewrong.png)
 		
 ### Wrong Answer
 When a choice is made the quiz highlights red when the answer given is wrong, but returns to uncoloured for the next question
 <br>
-User stories covered: 4, 2
+User stories covered: 4
 
-![Right Answer](docs/feature/feat_staff.png)
+![Right Answer](docs/features/quizchoiceright.png)
 
 ### Right Answer
 When a choice is made the quiz highlights green when the answer given is correct, but returns to uncoloured for the next question. 
 <br>
-User stories covered: 3, 2
+User stories covered: 3
 
-![Quiz Status](docs/feature/feat_rooms.png)
+![Quiz Status](docs/features/quizStatus.png)
 		
 ### Current Status of Quiz
 This feature shows the user what number, out of ten, they are on for the trivia, and their current score.
 <br>
 User stories covered: 3
 
-![Game Notification](docs/feature/feat_difficulty.png)
+![Game Notification](docs/features/quizComplete.png)
 	
 ### Game Notification
 This alert shows the user their final score and that the quiz is now done.
 <br>
 User stories covered: 6
 
-![Contact Form](docs/feature/feat_business_info.png)
+![Contact Form](docs/features/form.png)
 		
 ### Contact Form
 A form that allows users to contact the site owners providing their name, email, and a comment about the games.
 <br>
 User stories covered: 5
 
-![Submit status](docs/feature/feat_google_map.png)
+![Submit status](docs/features/submitbutton.png)
+![Submit Status](docs/features/submitbuttonstatus.png) 
 		
 ### Submit Button Status
 The button for the form updates to show the status of the submission 
 <br>
 User stories covered: 6
 
-![Play Again?](docs/feature/feat_booking.png)
+![Play Again?](docs/features/playagain.png)
 
 ### Play Again Button
 This button at the end of the contact form takes players back to the memory game
 <br>
 User stories covered: 9
 
-![404 Page](docs/feature/feat_footer.png)
+![404 Page](docs/features/404.png)
 
 ### 404 Page
 The 404 page allows users to know if they have navigated to a non-working or non-existing page on the site, and allows them to return to the main site easily.
 <br>
 User stories covered: 11
 
-![Footer](docs/feature/feat_404.png)
+![Footer](docs/features/footer.png)
 
 ### Footer
 The footer holds links to all our social media platforms allowing for quick access to our business platforms there
@@ -350,21 +365,18 @@ The website was evaluated and tested on the following browswers below:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
-
-<details><summary>Screenshots</summary>
-<img src="docs/tests/test_01.png">
-</details>
+|  Memory Game  | Load the Game page| Randomizes the tiles for each play  | Works as expected |
 
 
-2. 	As Oskar, I want a game that is interactive and responds to me so I can easily have fun.
+2. 	As Oskar, I want a game that is interactive and responds to me so I can easily understand what input I'm providing.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
+| Choice Hightlight | Hoover over choices | Magnifies the current choice | Works as expected  |
+
 
 <details><summary>Screenshots</summary>
-<img src="docs/tests/test_02.png">
+<img src="docs/screenshots/quizchoicehighlight.png">
 </details>
 
 
@@ -372,10 +384,12 @@ The website was evaluated and tested on the following browswers below:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
+| Game Score Section | Play game, and earn points | Display the amount of points earned | Works as expected |
+| Right Answer | Chose the correct answer in the quiz | Highlights green, showing accuracy | Works as expected  |
 
 <details><summary>Screenshots</summary>
-<img src="docs/tests/test_03_05.png">
+<img src="docs/screenshots/score.png">
+<img src="docs/screenshots/quizchoiceright.png">
 </details>
 
 
@@ -383,20 +397,20 @@ The website was evaluated and tested on the following browswers below:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
+|  Wrong Answer | Choose the wrong answer in the quiz| Highlights red, showing inaccuracy | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/tests/test_04.png">
+<img src="docs/screenshots/quizchoicewrong.png">
 </details>
 
 5. As Natali, I want a way to communicate with the site owner so I can relay my opinion about the product.	
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
+| Contact Form | Navigate to Contact Us Page | Display a working form to be filled out | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/tests/test_03_05.png">
+<img src="docs/screenshots/form.png">
 </details>
 
 
@@ -404,10 +418,11 @@ The website was evaluated and tested on the following browswers below:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
+| Submit Button Status | Click submit button | Button displayst the different status' of the forms delivery | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/tests/test_06.png">
+<img src="docs/screenshots/submitbutton.png">
+<img src="docs/screenshots/submitbuttonstatus.png">
 </details>
 
 
@@ -415,10 +430,10 @@ The website was evaluated and tested on the following browswers below:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
+|  Quiz | Play the game on the Quiz page | Generate trivia questions with three choices to try and guess right | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/tests/test_07.png">
+<img src="docs/screenshots/quizgame.png">
 </details>
 
 
@@ -426,10 +441,10 @@ The website was evaluated and tested on the following browswers below:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
+| Footer | Scroll to bottom of any page | Display buttons that take users to the exterior social media link | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/tests/test_08.png">
+<img src="docs/screenshots/quizgame.png">
 </details>
 
 
@@ -437,10 +452,10 @@ The website was evaluated and tested on the following browswers below:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
+| Play Again  | Click the Play Again? button at the end of the contact form | Takes user back to the index.html page and to play the memory game again | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/tests/test_09.png">
+<img src="docs/screenshots/playagain.png">
 </details>
 
 
@@ -448,19 +463,32 @@ The website was evaluated and tested on the following browswers below:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
+| Logo and Nav  | Scroll to the top of any page on the site | Display the links to the other pages of the site, while highlighting what page the user is currently on | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/tests/test_10.png">
+<img src="docs/screenshots/logonav.png">
 </details>
 
 11. As the site owner, I want the user to be able to easily return to the site if they visit a non-existing/non-working page on the site.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|   | |  |  |
+|  404 Page | Visit a page that doesn't exist on the site | Display a warning, and a link to return to the main site | Works as expected  |
+
+<details><summary>Screenshots</summary>
+<img src="docs/screenshots/404.png">
+</details>
 
 ## Bugs
+
+### JHint EMailJS Error
+When I ran my JavaScript for the Contact Us page JHint threw up an error about the email.js being used, and after research I understand this is a common occurance with JHint, as EmailJS works perfectly fine, as is, with the code snipets used. 
+<details><summary>Screenshots</summary>
+<img src="docs/screenshots/formJAVAValid error.png">
+</details>
+
+### JHint 'is only available in ES6 (use 'esversion: 6' or '8' etc)
+My files are throwing up a warning that states certain syntax and code uses is only available in ES6 (use 'esversion: 6'), or 8, etc. I was unable to remove these messages but in my research I found that these are not errors in my code but something to do with how JHint validates. 
 
 ## Deployment
 
@@ -484,6 +512,9 @@ You can clone the repository by following these steps:
 7. Press Enter to create your local clone.
 
 ## Credits
+This video (https://www.youtube.com/watch?v=tjyDOHzKN0w) was the inspiration for my memory game
+I used this video to understand the logic of the quiz game (https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2669s)
+
 
 ### Media
 
