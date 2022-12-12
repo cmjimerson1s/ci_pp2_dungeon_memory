@@ -312,7 +312,7 @@ JSHint was used to evaluate the JavaScript controlling the pages of the website,
     <img src="docs/validate/gameJAVAValid.png">
 </details>
 <details><summary>Quiz</summary>
-    <img src="docs/validate/quizAccessValid.png">
+    <img src="docs/validate/quizJAVAValid.png">
 </details>
 <details><summary>Contact Us</summary>
     <img src="docs/validate/contactJAVAValid.png">
