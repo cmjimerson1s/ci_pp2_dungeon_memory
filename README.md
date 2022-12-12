@@ -535,9 +535,11 @@ This has been an amazing experience, and I have many people to thank...
 <br>
 My mentor, Mo Shami, has been a great source of information and has helped me quite a bit. Truly above and beyond.
 <br>
-My husband, Leo, he's done so much to help me be able to devote the time to this project.
+My husband, Leo, he's done so much to help me be able to devote the time to this project. You have been so supportive and I love you so much for all you do.
 <br>
-My housemate and very good friend, Trevor, who has really been amazing in helping around the house to let me have the time to do this project
+My housemate and very good friend, Trevor, who has really been amazing in helping around the house to let me have the time to do this project. You go above and beyond and I appreciate you so much for what you do.
+<br>
+Oskar, you have been an unending supportive friend, and I'm lucky to have you in my corner. 
 
 
 
