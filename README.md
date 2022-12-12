@@ -444,7 +444,7 @@ The website was evaluated and tested on the following browswers below:
 | Footer | Scroll to bottom of any page | Display buttons that take users to the exterior social media link | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/screenshots/quizgame.png">
+<img src="docs/screenshots/footer.png">
 </details>
 
 
