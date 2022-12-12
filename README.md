@@ -189,7 +189,7 @@ User stories covered: 3
 
 ![Quiz](docs/features/quizchoicehighlight.png)
 		
-### Choice Highlight
+### Quiz
 A game that displays random fantasy trivia
 <br>
 User stories covered: 7
