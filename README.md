@@ -517,12 +517,16 @@ I used this video to understand the logic of the quiz game (https://www.youtube.
 
 
 ### Media
-
-
+All of the weapon tokens were created from this file, on <a href="https://gameartpartners.com/downloads/100-pixel-art-weapon-icons-2/">GameArtPartners</a>
+<br>
+[dragon.png] (assets/img/dragon.png): Designed by user: <a href ="https://www.reddit.com/user/TheCraftingCow/">The crafting cow</a> on <a href="https://www.reddit.com/r/Minecraft/comments/k3gwat/i_drew_this_ender_dragon_pixel_art_what_should_i/">on Reddit</a>
+<br>
+[gold.png] (assets/img/gold.png): Designed by user: <a href="https://www.shutterstock.com/g/non157">non248 pixel art</a>, on <a href="https://www.shutterstock.com/image-vector/vector-pixel-art-gold-coin-isolated-1209030841">Shutter Stock</a>
+[dungeon_bg.jpg] (assets/img/dungeon_bg.jpg): Designed by user <a href="https://www.shutterstock.com/g/YUCALORA">YUCALORA</a>, on <a href="https://www.shutterstock.com/image-vector/dungeon-long-medieval-castle-corridor-torches-2126199458">Shutter Stock</a>
 
 ### Code
-
-
+Use of EmalJS snipets located in file contact.js(assets/js/contact.js) can be found at emailjs.com.
+Use of favicon.io snipets located in files index.html, quiz.html, contact.html, and 404.html can be found at favicon.io.
 
 ## Acknowledgements
 This has been an amazing experience, and I have many people to thank...
